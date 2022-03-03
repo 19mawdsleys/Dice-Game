@@ -1,0 +1,328 @@
+#round1p1
+import random
+#AUTHENTICATION
+print("Welcome to the PYTHON dice game login user 1")
+user = str(input("what is your username?"))
+if user == "tay" or "salem" or "brendan" or "ronnie":
+    print("please enter password")
+else:
+    print("Unauthorised")
+password = "abc123"
+if user == "tay" or "salem" or "brendan" or "ronnie":
+    attempt = str(input("Enter your password")) 
+    if attempt == password:
+        print("authorised")
+    else:
+        exit()
+print("Welcome to the dice game")
+rollplayer1=0
+user1Score=0
+
+die1=random.randint(1,6)
+die2=random.randint(1,6)
+totaldie=die1+die2
+print ("you rolled a ",die1, "and a ",die2)
+if die1 == die2:
+    print ("you rolled a double! Roll another die!")
+    die3=random.randint(1,6)
+    print("you rolled a ", die3)
+    totaldie=totaldie+die3
+    print("you have now rolled", totaldie)
+else:
+    print("you have rolled", totaldie)
+user1Score=user1Score + totaldie
+odds =totaldie %2
+
+if odds == 1:
+    user1Score = user1Score-5
+else:
+    user1Score = user1Score+10
+print("your score so far player 1 is ",user1Score)
+########################################################
+########################################################
+########################################################
+
+#round1p2
+
+print("Your turn player 2")
+
+rollplayer2=0
+user2Score=0
+
+die1a=random.randint(1,6)
+die2a=random.randint(1,6)
+totaldiea=die1a+die2a
+print ("you rolled a ",die1a, "and a ",die2a)
+if die1a == die2a:
+    print ("you rolled a double! Roll another die!")
+    die3a=random.randint(1,6)
+    print("you rolled a ", die3a)
+    totaldiea=totaldiea+die3a
+    print("you have now rolled", totaldiea)
+else:
+    print("you have rolled", totaldiea)
+user2Score=user2Score + totaldiea
+odds =totaldiea %2
+
+if odds == 1:
+    user2Score = user2Score-5
+else:
+    user2Score = user2Score+10
+print("your score so far player 2 is ",user2Score)
+#############################################################
+############################################################
+##########################################################
+
+#round2p1
+
+print("your turn player 1")
+
+rollplayer1r2=0
+user1Score=user1Score
+
+die1b=random.randint(1,6)
+die2b=random.randint(1,6)
+totaldieb=die1b+die2b
+print ("you rolled a ",die1b, "and a ",die2b)
+if die1b == die2b:
+    print ("you rolled a double! Roll another die!")
+    die3b=random.randint(1,6)
+    print("you rolled a ", die3b)
+    totaldieb=totaldieb+die3b
+    print("you have now rolled", totaldieb)
+else:
+    print("you have rolled", totaldieb)
+user1Score=user1Score + totaldieb
+odds =totaldieb %2
+
+if odds == 1:
+    user1Score = user1Score-5
+else:
+    user1Score = user1Score+10
+print("your score so far player 1 is ",user1Score)
+################################################################
+################################################################
+################################################################
+
+#round2p2
+
+print("your turn player 2")
+
+rollplayer2r2=0
+user2Score=user2Score
+
+die1c=random.randint(1,6)
+die2c=random.randint(1,6)
+totaldiec=die1c+die2c
+print ("you rolled a ",die1c, "and a ",die2c)
+if die1c == die2c:
+    print ("you rolled a double! Roll another die!")
+    die3c=random.randint(1,6)
+    print("you rolled a ", die3c)
+    totaldiec=totaldiec+die3c
+    print("you have now rolled", totaldiec)
+else:
+    print("you have rolled", totaldiec)
+user2Score=user2Score + totaldiec
+odds =totaldiec %2
+
+if odds == 1:
+    user2Score = user2Score-5
+else:
+    user2Score = user2Score+10
+print("Your score so far player 2 is",user2Score)
+##################################################################
+#################################################################
+################################################################
+
+#round3p1
+
+rollplayer1r3=0
+user1Score=user1Score
+
+die1d=random.randint(1,6)
+die2d=random.randint(1,6)
+totaldied=die1d+die2d
+print ("you rolled a ",die1d, "and a ",die2d)
+if die1d == die2d:
+    print ("you rolled a double! Roll another die!")
+    die3d=random.randint(1,6)
+    print("you rolled a ", die3d)
+    totaldied=totaldied+die3d
+    print("you have now rolled", totaldied)
+else:
+    print("you have rolled", totaldied)
+user2Score=user2Score + totaldied
+odds =totaldied %2
+
+if odds == 1:
+    user1Score = user1Score-5
+else:
+    user1Score = user1Score+10
+print("Your score so far player 1 is",user1Score)
+###############################################################
+##############################################################
+#############################################################
+
+#round3p2
+
+rollplayer2r3=0
+user2Score=user2Score
+
+die1e=random.randint(1,6)
+die2e=random.randint(1,6)
+totaldiee=die1e+die2e
+print ("you rolled a ",die1e, "and a ",die2e)
+if die1e == die2e:
+    print ("you rolled a double! Roll another die!")
+    die3e=random.randint(1,6)
+    print("you rolled a ", die3e)
+    totaldiee=totaldiee+die3e
+    print("you have now rolled", totaldiee)
+else:
+    print("you have rolled", totaldiee)
+user2Score=user2Score + totaldiee
+odds =totaldiee %2
+
+if odds == 1:
+    user2Score = user2Score-5
+else:
+    user2Score = user2Score+10
+print("Your score so far player 2 is",user2Score)
+################################################################
+###############################################################
+#############################################################
+
+#round4p1
+
+rollplayer1r4=0
+user1Score=user1Score
+
+die1f=random.randint(1,6)
+die2f=random.randint(1,6)
+totaldief=die1f+die2f
+print ("you rolled a ",die1f, "and a ",die2f)
+if die1f == die2f:
+    print ("you rolled a double! Roll another die!")
+    die3f=random.randint(1,6)
+    print("you rolled a ", die3f)
+    totaldief=totaldief+die3f
+    print("you have now rolled", totaldief)
+else:
+    print("you have rolled", totaldief)
+user1Score=user1Score + totaldief
+odds =totaldief %2
+
+if odds == 1:
+    user1Score = user1Score-5
+else:
+    user1Score = user1Score+10
+print("Your score so far player 1 is",user1Score)
+#############################################################
+#############################################################
+#############################################################
+
+#round4p2
+
+
+rollplayer2r4=0
+user2Score=user2Score
+
+die1g=random.randint(1,6)
+die2g=random.randint(1,6)
+totaldieg=die1g+die2g
+print ("you rolled a ",die1g, "and a ",die2g)
+if die1g == die2g:
+    print ("you rolled a double! Roll another die!")
+    die3g=random.randint(1,6)
+    print("you rolled a ", die3g)
+    totaldieg=totaldieg+die3g
+    print("you have now rolled", totaldieg)
+else:
+    print("you have rolled", totaldieg)
+user2Score=user2Score + totaldieg
+odds =totaldieg %2
+
+if odds == 1:
+    user2Score = user2Score-5
+else:
+    user2Score = user2Score+10
+print("Your score so far player 2 is",user2Score)
+############################################################
+##########################################################
+########################################################
+
+#round5p1
+
+rollplayer1r5=0
+user1Score=user1Score
+
+die1h=random.randint(1,6)
+die2h=random.randint(1,6)
+totaldieh=die1h+die2h
+print ("you rolled a ",die1h, "and a ",die2h)
+if die1h == die2h:
+    print ("you rolled a double! Roll another die!")
+    die3h=random.randint(1,6)
+    print("you rolled a ", die3h)
+    totaldieh=totaldieh+die3h
+    print("you have now rolled", totaldieh)
+else:
+    print("you have rolled", totaldieh)
+user1Score=user1Score + totaldieh
+odds =totaldieh %2
+
+if odds == 1:
+    user1Score = user1Score-5
+else:
+    user1Score = user1Score+10
+print("Your score so far player 1 is",user1Score)
+#############################################################
+############################################################
+###########################################################
+
+#round5p2
+
+rollplayer2r5=0
+user2Score=user2Score
+
+die1i=random.randint(1,6)
+die2i=random.randint(1,6)
+totaldiei=die1i+die2i
+print ("you rolled a ",die1i, "and a ",die2i)
+if die1i == die2i:
+    print ("you rolled a double! Roll another die!")
+    die3i=random.randint(1,6)
+    print("you rolled a ", die3i)
+    totaldiei=totaldiei+die3i
+    print("you have now rolled", totaldiei)
+else:
+    print("you have rolled", totaldiei)
+user2Score=user2Score + totaldiei
+odds =totaldiei %2
+
+if odds == 1:
+    user2Score = user2Score-5
+else:
+    user2Score = user2Score+10
+print("Your score so far player 2 is",user2Score)
+################################################################
+##########################################################
+####################################################
+
+if user2Score > user1Score:
+    print("User 2 wins with",user2Score)
+elif user1Score > user2Score:
+    print("User 1 wins with",user1Score)
+else:
+    print("Its a tie")
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                
