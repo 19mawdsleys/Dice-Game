@@ -1,0 +1,16 @@
+# Lesderboard
+def leaderboard():
+    """
+    This function will return the top 5 scores of all time and the usernames in the form [{1:"username"}, ...]
+    """
+    import json
+    lb_file = open("leaderboard.json", "r")
+    json_lb = json.loads(lb_file.read())
+    keys = [_ for _ in json_lb.keys()]
+    new_list = [int(_) for _ in keys]
+    new_list.sort()
+    returned_list = []
+    for integer in new_list:
+        user = json_lb[str(integer)]
+        returned_list.append({user:str(integer)})
+    return returned_list
